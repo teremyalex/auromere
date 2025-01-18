@@ -112,6 +112,25 @@ body{
 	font-size: 16px;
 	color:#7B7B7B;
 }
+.hangoskonyv{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px;
+}
+.hangoskonyv h5{
+	font-size: 22px;
+	margin: 0;
+}
+.hangoskonyv p{
+	margin: 0;
+}
+.hangoskonyv img{
+	max-width: 150px;
+	border-radius: 50%;
+	margin: 0 !important;
+}
+
 .timeline h3{
 	font-family: 'Playfair Display';
 	font-size: 36px;
@@ -139,8 +158,13 @@ body{
 	background: white;
 	border: 1px solid #D9D9D9;
 	border-radius: 30px;
+	font-style: italic;
 	padding: 20px;
 	box-sizing: border-box;
+}
+.timeline .timeline-block:last-child .timeline-text {
+	padding: 0;
+	overflow: hidden;
 }
 .timeline .timeline-vonal-block{
 	display: flex;
@@ -186,6 +210,10 @@ body{
     height: 5px;
     background: black;
     border-radius: 50px;
+}
+.timeline img{
+	width: 100%;
+	display: block;
 }
 .hero3{
 	padding: 70px 10px;
@@ -262,14 +290,33 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 	align-content: center;
-    width: 144px;
-    height: 144px;
-    background: black;
-    font-family: 'Playfair Display';
-    font-size: 32px;
+	width: 150px;
+	height: 150px;
+	background: black;
+	font-family: 'Playfair Display';
+	font-size: 18px;
+	text-align: center;
     color: white;
     border-radius: 50%;
-    right: 0;
+	bottom: 0;
+	right: 160px;
+}
+.rendeles-konyv .termek-ar2{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 150px;
+	height: 150px;
+	background: #DBEBEC;
+	font-family: 'Playfair Display';
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	border-radius: 50%;
+	bottom: 0;
+	right: 0;
 }
 .rendeles-konyv .termek-ar del {
     font-size: 22px;
@@ -347,6 +394,8 @@ form button {
 	width: 45%;
 }
 .kosar-gomb {
+	width: 100%;
+	background-color: transparent;
     padding: 15px;
     margin: 10px auto;
     font-size: 22px;
@@ -476,6 +525,53 @@ input#myCheck {
     border-radius: 15px;
 	cursor:pointer;
 }
+footer{
+	background: url("img/bubble.png") repeat-x bottom center;
+	padding: 50px 10px 150px;
+	text-align: center;
+}
+footer > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+footer .aposztrof{
+	font-family: 'Playfair Display';
+	font-size: 128px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 38px;
+}
+footer h3{
+	font-family: 'Playfair Display';
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 38px;
+	max-width: 389px;
+	margin: 0 auto 10px;
+}
+footer p{
+	color: #7B7B7B;
+	font-size: 20px;
+	max-width: 389px;
+	margin: 0 auto;
+}
+footer > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+footer > div > div > div{
+	width: 50%;
+	margin: 0 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+footer > div img{
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
 
 @media (max-width:500px){
 .hero1 {
@@ -503,10 +599,10 @@ input#myCheck {
     position: absolute;
     border-radius: 50%;
     background: #DBEBEC;
-    width: 300px;
-    height: 300px;
-    z-index: -1;
-    top: 1085px;
+	width: 350px;
+	height: 350px;
+	z-index: -1;
+	top: 1178px;
     right: 10px;
 }
 .hero2 > div img {
@@ -514,6 +610,9 @@ input#myCheck {
 }
 .hero2 ul {
     font-size: 28px;
+}
+.hangoskonyv{
+	justify-content: center;
 }
 .timeline .timeline-block {
     flex-direction: row-reverse;
@@ -529,8 +628,8 @@ input#myCheck {
     width: 62%;
 }
 .timeline .vonal {
-	top: -200px;
-	bottom: -180px;
+	top: -85px;
+	bottom: -354px;
 }
 .hero3 > div > div > div {
     width: 100%;
@@ -566,13 +665,29 @@ input#myCheck {
 .rendeles-konyv .termek-ar {
     width: 110px;
     height: 110px;
-    font-size: 20px;
+    font-size: 14px;
     right: 0px;
+}
+.rendeles-konyv .termek-ar2 {
+	width: 110px;
+	height: 110px;
+	font-size: 14px;
+	right: 120px;
 }
 .rendeles-konyv .termek-ar del {
     font-size: 16px;
 }
 .rendeles-form label {
     font-size: 13px;
+}
+footer h3{
+	font-size: 25px;
+	line-height: 26px;
+}
+footer > div > div > div {
+	width: 100%;
+}
+footer > div img {
+	width: 75%;
 }
 }
